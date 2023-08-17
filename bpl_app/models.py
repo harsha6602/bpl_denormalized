@@ -19,7 +19,7 @@ class TeamsInfo(models.Model):
 
 
     def __str__(self):
-        return self.team_id,self.player_id
+        return self.team_id
 
 class Matches(models.Model):
     match_no = models.CharField(max_length=12,unique=True,primary_key=True)
@@ -33,5 +33,3 @@ class Matches(models.Model):
     
     def __str__(self):
         return self.match_no
-
-   
